@@ -1,0 +1,8 @@
+language: ruby
+sudo: enabled
+before_install:
+- sudo apt-get -qq update
+- NOKOGIRI_USE_SYSTEM_LIBRARIES=1 gem install asciidoctor-epub3 --pre
+- gem install epubcheck
+script:
+- "asciidoctor-epub3 -D output -a ebook-validate epub.adoc"

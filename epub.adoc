@@ -1,0 +1,9 @@
+= Local Government Handbook =
+New York State Department of State
+:author: Division of Local Government Services
+:email: local@dos.ny.gov
+:doctype: book
+:username: LGSLockup
+ifndef::ebook-format[:leveloffset: +1]
+
+include::chapter-1.adoc[]
