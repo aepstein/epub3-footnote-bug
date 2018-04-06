@@ -1,0 +1,7 @@
+= Asciidoctor Epub3 Footnote Bug Illustrated
+
+This repo is intended to illustrate a bug in asciidoctor-epub3.
+The bug causes the package to generate an invalid Epub3 publication when footnotes are placed in tables.
+The numbering in the table seems to not consider numbering outside the table, so it gives its footnotes potentially duplicative IDs.
+This causes the EPUB3 validation to fail.
+Even in readers that will open the resulting EPUB3, footnote references are mangled since the later ones override the earlier ones they duplicate.
