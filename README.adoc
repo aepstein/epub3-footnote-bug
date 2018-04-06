@@ -1,4 +1,7 @@
+
 = Asciidoctor Epub3 Footnote Bug Illustrated
+
+image:https://travis-ci.org/aepstein/epub3-footnote-bug.svg?branch=master["Build Status", link="https://travis-ci.org/aepstein/epub3-footnote-bug"]
 
 This repo is intended to illustrate a bug in asciidoctor-epub3.
 The bug causes the package to generate an invalid Epub3 publication when footnotes are placed in tables.
